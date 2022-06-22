@@ -1,0 +1,24 @@
+<p>menu works!</p>
+<div class="container"
+
+     fxLayout="column" 
+
+     fxLayoutGap="10px">  
+</div>
+<mat-list fxFlex>
+
+    <mat-list-item *ngFor="let item of yonis">
+
+      <img matListAvatar src={{item.imagen}} alt={{item.nombre}}>
+
+      <h1 matLine> {{item.nombre}} </h1>
+
+      <p matLine>
+
+      <span> {{item.descripcion}} </span>
+
+      </p>
+
+    </mat-list-item>
+
+</mat-list>
